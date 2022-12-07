@@ -54,7 +54,8 @@ a {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.button-primary:hover {
+.button-primary:hover,
+.button-primary:focus {
   background-color: var(--button-primary-hover);
   cursor: pointer;
 }
@@ -96,10 +97,12 @@ header ul {
   line-height: 1.2;
   text-decoration: none;
 }
-.logo.white-font:hover {
+.logo.white-font:hover,
+.logo.white-font:focus {
   color: var(--logo-black);
 }
-.logo.black-fond:hover {
+.logo.black-fond:hover,
+.logo.black-fond:focus {
   color: var(--primary-white-color);
 }
 .nav-menu .page {
@@ -275,6 +278,7 @@ header ul {
   padding: 6px 24px 6px 24px;
 }
 .portfolio .list li button:hover,
+.portfolio .list li button:focus,
 .portfolio .list li button.current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -319,6 +323,7 @@ address .contact {
   line-height: 1.71;
   text-decoration: none;
 }
-address .contact:hover {
+address .contact:hover,
+address .contact:focus {
   color: var(--primary-white-color);
 }
