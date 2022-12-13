@@ -18,6 +18,7 @@
   --background-black: #21303a;
   --background-gray: #f5f4fa;
   --background-portafolio: #e5e5e5;
+  --border-header: #ececec
   --button-filter: #f5f4fa;
   --button-primary-hover: #188ce8;
   --logo-black: #000000;
@@ -25,7 +26,6 @@
 
   --container-padding: calc((100% - 1200px) / 2);
 }
-
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -33,15 +33,12 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-
 a {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
 }
-
 .button-primary {
   font-size: 16px;
   background-color: var(--accent-color);
@@ -53,13 +50,11 @@ a {
   margin-top: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
 .button-primary:hover,
 .button-primary:focus {
   background-color: var(--button-primary-hover);
   cursor: pointer;
 }
-
 .container {
   padding: 0 15px;
   max-width: 1200px;
@@ -73,6 +68,8 @@ header {
   align-items: center;
   height: 80px;
   padding: 0 var(--container-padding);
+  
+  border-bottom: 1px solid #0000002d;
 }
 header nav {
   display: flex;
@@ -88,7 +85,7 @@ header ul {
   gap: 80px;
 }
 /* logo section  */
-.logo {
+header nav .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -154,8 +151,16 @@ header ul {
   width: 696px;
   height: 120px;
 }
+
+.section {
+  padding:  94px 0;
+}
+.no-top-padding {
+  padding-top: 0px;
+}
+
 /* benefist */
-.section.benefits-content {
+.section .benefits-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +169,6 @@ header ul {
   font-style: normal;
   display: flex;
   gap: 30px;
-  margin-top: 95px;
   width: 1170px;
   height: 122px;
 }
@@ -184,7 +188,6 @@ header ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -194,9 +197,10 @@ header ul {
 .section.what-we-do ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 31.26px;
-  margin-top: 55.05px;
   list-style: none;
+  margin-top: 55px;
 }
 /* section our-Team  */
 .section.our-team {
@@ -204,10 +208,8 @@ header ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 94px;
 }
 .section.our-team h2 {
-  margin-top: 94px;
   font-weight: 700;
   font-size: 36px;
   font-style: normal;
@@ -215,10 +217,10 @@ header ul {
 }
 .section.our-team ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: 37px;
-  margin-top: 50px;
-  margin-bottom: 94px;
+  margin-top: 55px;
 }
 .section.our-team ul li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -231,21 +233,21 @@ header ul {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
   color: var(--primary-black-color);
 }
 .section.our-team ul p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  margin-bottom: 30px;
   color: var(--primary-text-color);
   line-height: 19px;
   text-align: center;
 }
 
 /* Portfolio section  */
+.section.portfolio {
+  padding: 94px 0;
+}
 .portfolio {
   background-color: var(--background-portafolio);
   display: flex;
@@ -260,10 +262,17 @@ header ul {
   flex-direction: row;
 }
 .portfolio .list.button {
-  gap: 8px;
-  margin-top: 106px;
+  align-items: center;
+  display:  flex;
+  flex-direction: row;
+  justify-content: center;
   text-align: center;
+  gap: 8px;
+  width: 100px;
+  padding: 30px auto;
+  margin: 0 auto;
 }
+
 .portfolio .list li button {
   font-family: "Roboto", sans-serif;
   color: var(--primary-black-color);
@@ -276,6 +285,8 @@ header ul {
   text-transform: capitalize;
   text-align: center;
   padding: 6px 24px 6px 24px;
+
+  border: none;
 }
 .portfolio .list li button:hover,
 .portfolio .list li button:focus,
@@ -287,8 +298,8 @@ header ul {
   flex-wrap: wrap;
   justify-content: space-between;
   display: flex;
-  margin-top: 34px;
   gap: 10px;
+  margin-top: 50px;
 }
 .portfolio .list.img li {
   box-sizing: border-box;
@@ -314,6 +325,9 @@ footer {
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 60px;
+}
+.logo.black-fond {
+  color: var(--accent-color);
 }
 address .contact {
   color: var(--text-white-opacity);
