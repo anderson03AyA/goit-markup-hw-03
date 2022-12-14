@@ -17,7 +17,7 @@
   --accent-color: #2196f3;
   --background-black: #21303a;
   --background-gray: #f5f4fa;
-  --background-portafolio: #e5e5e5;
+  --background-lio: #e5e5e5;
   --border-header: #ececec
   --button-filter: #f5f4fa;
   --button-primary-hover: #188ce8;
@@ -59,6 +59,7 @@ a {
   padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--primary-white-color);
 }
 
 /* header flex */
@@ -249,7 +250,7 @@ header nav .logo {
   padding: 94px 0;
 }
 .portfolio {
-  background-color: var(--background-portafolio);
+  background-color: var(--background-lio);
   display: flex;
   flex-direction: column;
   font-style: normal;
@@ -305,6 +306,11 @@ header nav .logo {
   box-sizing: border-box;
   background: var(--primary-white-color);
   border: 1px solid var(--color-border);
+  list-style: none;
+  border: 1px solid var(--color-border);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list.img .portfolio-title {
   font-weight: 700px;
