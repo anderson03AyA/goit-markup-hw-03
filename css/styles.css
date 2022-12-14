@@ -17,7 +17,7 @@
   --accent-color: #2196f3;
   --background-black: #21303a;
   --background-gray: #f5f4fa;
-  --background-lio: #e5e5e5;
+  --background-portfolio: #e5e5e5;
   --border-header: #ececec
   --button-filter: #f5f4fa;
   --button-primary-hover: #188ce8;
@@ -215,6 +215,7 @@ header nav .logo {
   font-size: 36px;
   font-style: normal;
   color: var(--primary-black-color);
+  padding-bottom: 3px;
 }
 .section.our-team ul {
   display: flex;
@@ -250,7 +251,7 @@ header nav .logo {
   padding: 94px 0;
 }
 .portfolio {
-  background-color: var(--background-lio);
+  background-color: var(--background-portfolio);
   display: flex;
   flex-direction: column;
   font-style: normal;
