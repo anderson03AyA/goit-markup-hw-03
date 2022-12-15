@@ -49,6 +49,9 @@ a {
   top: 430px;
   margin-top: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -194,6 +197,7 @@ header nav .logo {
   line-height: 42px;
   text-align: center;
   color: var(--primary-black-color);
+  gap: 5px;
 }
 .section.what-we-do ul {
   display: flex;
@@ -250,8 +254,10 @@ header nav .logo {
 }
 
 /* Portfolio section  */
+
 .section.portfolio {
   padding: 94px 0;
+  background-color: var(--primary-white-color);
 }
 .portfolio {
   background-color: var(--background-portfolio);
@@ -260,7 +266,6 @@ header nav .logo {
   font-style: normal;
   align-items: center;
   padding: 0 215px 82px 215px;
-  background-color: var();
 }
 .portfolio .list {
   display: flex;
@@ -273,15 +278,15 @@ header nav .logo {
   justify-content: center;
   text-align: center;
   gap: 8px;
-  width: 100px;
   padding: 30px auto;
   margin: 0 auto;
 }
-
 .portfolio .list li button {
   font-family: "Roboto", sans-serif;
   color: var(--primary-black-color);
   background-color: var(--background-gray);
+  border: none;
+  outline:  none;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -290,14 +295,17 @@ header nav .logo {
   text-transform: capitalize;
   text-align: center;
   padding: 6px 24px 6px 24px;
-
-  border: none;
 }
 .portfolio .list li button:hover,
 .portfolio .list li button:focus,
 .portfolio .list li button.current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px
+   rgba(0, 0, 0, 0.1), 0px 1px 2px
+    rgba(0, 0, 0, 0.08), 0px 2px 2px
+     rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .portfolio .list.img {
   flex-wrap: wrap;
@@ -307,14 +315,15 @@ header nav .logo {
   margin-top: 50px;
 }
 .portfolio .list.img li {
-  box-sizing: border-box;
   background: var(--primary-white-color);
+  box-sizing: border-box;
   border: 1px solid var(--color-border);
-  list-style: none;
   border: 1px solid var(--color-border);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+  list-style: none;
+  padding-bottom: 20px;
 }
 .list.img .portfolio-title {
   font-weight: 700px;
@@ -322,12 +331,16 @@ header nav .logo {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--primary-black-color);
+  padding-left: 24px;
 }
 .list.img .portfolio-text {
   font-weight: 400px;
   font-size: 16px;
   line-height: 30px;
   color: var(--primary-text-color);
+  padding-left: 24px;
+}
+.list.img li {
 }
 /* footer section  */
 footer {
