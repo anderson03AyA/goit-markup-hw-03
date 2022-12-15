@@ -210,12 +210,15 @@ header nav .logo {
   align-items: center;
   flex-direction: column;
 }
+.section.our-team .container {
+  background-color: var(--background-gray);
+}
 .section.our-team h2 {
   font-weight: 700;
   font-size: 36px;
   font-style: normal;
   color: var(--primary-black-color);
-  padding-bottom: 3px;
+  gap: 3px;
 }
 .section.our-team ul {
   display: flex;
